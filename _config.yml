@@ -1,55 +1,62 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Info about you
+name: Brian's Blog
+position: software Engineer
+email: c1c4c5c6@gmail.com
+company_name: Company Name
+company_url: https://www.yourcompany.com
+place_name: Taiwan
 
-title: Brian's home
-email: NA
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# Blog info
+title: Brian's Blog
+description: Blog
+url: https://Po-Ting-lin.github.io/
+main_github_io: true
+long_description: >-
+    Hi!  Welcome to my Blog.
 
-# Build settings
-theme: jekyll-theme-dinky
+# Social links
+github_url: https://github.com/Po-Ting-lin
+linkedin_url: https://www.linkedin.com/in/po-ting-lin-333aa1155
+social:
+  links:
+    - https://www.linkedin.com/in/po-ting-lin-333aa1155
+    - https://github.com/Po-Ting-lin
+
+# Images + files
+logo: assets/img/headshot.svg
+cv_url: assets/files/cv.pdf
+resume_url: assets/files/resume.pdf
+
+# Blog settings
+markdown: kramdown
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
+highlighter: rouge
+color_mode: light  # auto, light, or dark
+comments: false
+disqus_shortname: none
+syntax_highlight_stylesheet: syntax_highlight.css
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Colors - light mode
+colors:
+  text: 282828
+  tag: dbefdc
+  tag_hover: 93cf95
+  header_background: 2D4F4F
+  header_text: dbefdc
+  header_link_hover: dbefdc
+  links: 459c48
+  links_visited: 357a38
+
+# Colors - dark mode
+colors_dark:
+  background: 333
+  text: 000000
+  tag: 2e6830
+  tag_hover: 93cf95
+  header_background: FFEBCD
+  header_text: 2F4F4F
+  header_link: 2F4F4F
+  header_link_hover: 000000
+  links: 000000
+  links_visited: 000000
